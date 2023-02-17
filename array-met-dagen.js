@@ -14,7 +14,7 @@ function listCheck(listType, reverse, idName) {
 
 function reversing(list, reverse, idName) {
   if (reverse) {
-    list = list.reverse();
+    let list = list.reverse();
   }
   listing(list, idName);
 }
