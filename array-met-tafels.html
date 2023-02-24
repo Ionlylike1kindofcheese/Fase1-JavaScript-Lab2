@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array met tafels</title>
+  <script src="array-met-tafels.js"></script>
+</head>
+<body>
+  <div id="field-ammout-select">
+    <Label for="field-ammout">Selecteer aantal nummervelden</Label>
+    <select name="field-total" id="field-ammout"><script>selectBoxGenerate(document.getElementById('field-ammout'))</script></select>
+  </div>
+  <div id="input-field">
+    <p>Typ een nummer en bereken de tafel ervan. (Alleen hele nummers)</p>
+    <form id="number-inputs"></form>
+    <script>setupInputs()</script>
+    <button type="button" onclick="submitNumbers(document.getElementById('number-inputs'))">Bevestig</button>
+  </div>
+  <div id="generate-tafels"></div>
+</body>
+</html>
